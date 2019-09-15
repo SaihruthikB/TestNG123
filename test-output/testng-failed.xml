@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Functional Testing]">
+  <listeners>
+    <listener class-name="testListerner.Listerner"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="First_XML_Program(failed)">
+    <classes>
+      <class name="Pratise.FirstTestNG">
+        <methods>
+          <include name="validation"/>
+          <include name="check"/>
+        </methods>
+      </class> <!-- Pratise.FirstTestNG -->
+      <class name="Pratise.Dependecy">
+        <methods>
+          <include name="Regist"/>
+        </methods>
+      </class> <!-- Pratise.Dependecy -->
+    </classes>
+  </test> <!-- First_XML_Program(failed) -->
+</suite> <!-- Failed suite [Functional Testing] -->

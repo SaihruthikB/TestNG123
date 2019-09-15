@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Functional Testing">
+<listeners>
+<listener class-name ="testListerner.Listerner"></listener>
+<listener class-name ="org.uncommons.reportng.HTMLReporter"></listener></listeners>
+
+
+
+
+  <test name="First_XML_Program">
+    <classes>
+      <class name="Pratise.FirstTestNG"/>
+      <class name="Pratise.Dependecy"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
